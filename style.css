@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Tektur&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background: url("./assets/bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 200px auto 0;
+    box-shadow: 8px 10px 10px #686868;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 1px solid #686868;
+    font-family: 'Tektur', cursive;
+}
+
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 6px 6px 8px #696969;
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 1px 8px 1px 8px;
+    height: 40px;
+    background-color: #7B68EE;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 10px;
+    font-family: 'Tektur', cursive;
+    box-shadow: 6px 6px 8px #9370DB;
+}
+
+.button-add-task:hover {
+    opacity: 0.8;
+}
+
+.button-add-task:active {
+    opacity: 0.6;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.task {
+    background-color: #F2F2F2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
+
+
+@media(max-width: 480px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 200vh;
+    }
+
+    .container {
+        width: 380px;
+    }
+
+    .input-task {
+        width: 210px;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 200vh;
+    }
+
+    .container {
+        width: 370px;
+    }
+
+    .input-task {
+        width: 205px;
+    }
+}
+
+@media(max-width: 1465px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 200vh;
+    }
+}
